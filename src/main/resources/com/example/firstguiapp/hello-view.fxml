@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="271.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstguiapp.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+    <Label layoutX="10" layoutY="100" text="Login" />
+    <Label layoutX="10" layoutY="130" text="Password" />
+    <TextField fx:id="loginText" layoutX="70" layoutY="100" prefHeight="25.0" prefWidth="163.0" promptText="ID, phone number or email" />
+    <PasswordField fx:id="passwordField" layoutX="70" layoutY="130" prefHeight="25.0" prefWidth="163.0" />
+
+   <Button fx:id="loginButton" layoutX="40.0" layoutY="212.0" mnemonicParsing="false" onAction="#loginSystem" prefWidth="60" text="Login" />
+   <Button fx:id="regButton" layoutX="115.0" layoutY="212.0" mnemonicParsing="false" onAction="#showRegWindow" prefWidth="60" text="Register" />
+    <Button fx:id="cancelButton" layoutX="191.0" layoutY="212.0" mnemonicParsing="false" prefWidth="60" text="Cancel" />
+</Pane>
